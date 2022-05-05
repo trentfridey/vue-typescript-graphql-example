@@ -53,7 +53,7 @@ We will check the following:
 
 ## Additional information
 
+- **It's not necessary to use the provided stack (Vue.js, TypeScript and SCSS). Please use it if you feel comfortable with it. Otherwise, feel free to use any other well-known technology (e.g. React, Angular; JSX; LESS).**
 - There is no need to configure or optimize the final build. The development environment is sufficient.
-- It's recommented to use Vue.js, TypeScript and SCSS.
 - Good code quality is more important than the amount of features implemented.
 - Test coverage doesn't need to be perfect, but we would like to see some tests that you consider to be valuable.
