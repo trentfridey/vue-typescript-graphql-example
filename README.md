@@ -24,14 +24,15 @@ A video example of the functionality of the Pokédex can be found in the `exampl
 
 The Pokédex application you're building should communicate with the provided server to interact with the Pokémon data to allow users to perform the following actions:
 
-- Search for a Pokémon by name using a search bar
-- Filter the list of Pokémons by type using a dropdown menu
-- Mark and unmark a Pokémon as favorite by clicking on a heart icon
-- Use tabs to switch between the list of all Pokémons and the list of favorite Pokémons
-- Change to grid or list view
-- View a Pokémon's details by visiting the `/:name` route
-- View a Pokémon's details by clicking on a Pokémon's name or image (i.e. redirect to the `/:name` route)
-- On the Pokémon's details page, play the Pokémon's sound effect by clicking on a speaker icon
+- [x] Search for a Pokémon by name using a search bar
+- [x] Filter the list of Pokémons by type using a dropdown menu
+- [x] Mark and unmark a Pokémon as favorite by clicking on a heart icon
+- [x] Use tabs to switch between the list of all Pokémons and the list of favorite Pokémons
+- [x] Change to grid or list view
+- [x] View a Pokémon's details by visiting the `/:name` route
+- [x] View a Pokémon's details by clicking on a Pokémon's name or image (i.e. redirect to the `/:name` route)
+- [x] On the Pokémon's details page, play the Pokémon's sound effect by clicking on a speaker icon
+- [ ] Refactor to make the code quality top-notch
 
 Addionallity, you are free to add the following optional features:
 
@@ -44,12 +45,12 @@ Addionallity, you are free to add the following optional features:
 
 We will check the following:
 
-- Working functionalities as described
-- Code architecture
-- Code readability
-- Implementation details
-- Documentation
-- Automated tests
+- [ ] Working functionalities as described
+- [ ] Code architecture
+- [ ] Code readability
+- [ ] Implementation details
+- [ ] Documentation
+- [ ] Automated tests
 
 ## Additional information
 
