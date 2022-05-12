@@ -8,10 +8,4 @@ import { RouterView } from "vue-router";
 
 <style>
 @import "@/assets/base.css";
-
-header {
-  font-size: 24px;
-  text-align: center;
-  background-color: lightgreen;
-}
 </style>

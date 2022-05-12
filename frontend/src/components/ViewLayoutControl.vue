@@ -8,8 +8,9 @@ export enum ViewLayout {
 
 export default defineComponent({
   props: {
-    view: ViewLayout,
+    modelValue: ViewLayout,
   },
+  emits: ["update:modelValue"],
   computed: {
     ViewLayout() {
       return ViewLayout;
@@ -21,38 +22,38 @@ export default defineComponent({
 <template>
   <div class="view-controls">
     <div
-      @click="$emit('toggleView', ViewLayout.List)"
-      :class="['view-control', { selected: view === ViewLayout.List }]"
+      @click="$emit('update:modelValue', ViewLayout.List)"
+      :class="['view-control', { selected: modelValue === ViewLayout.List }]"
     >
       <font-awesome-icon icon="list" />
     </div>
     <div
-      @click="$emit('toggleView', ViewLayout.Grid)"
-      :class="['view-control', { selected: view === ViewLayout.Grid }]"
+      @click="$emit('update:modelValue', ViewLayout.Grid)"
+      :class="['view-control', { selected: modelValue === ViewLayout.Grid }]"
     >
       <font-awesome-icon icon="border-all" />
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .view-controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 120px;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
   & .view-control {
-    flex: 0 0 60px;
+    flex: 1 0 30px;
     text-align: center;
     font-size: 19px;
     background-color: lightgrey;
     cursor: pointer;
-    border: 1px solid black;
-    color: grey;
+    color: #42b883;
     &.selected {
-      background-color: darkgrey;
-      border: 3px solid black;
-      color: black;
+      background-color: #42b883;
+      color: white;
     }
   }
 }
