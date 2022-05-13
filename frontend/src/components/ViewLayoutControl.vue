@@ -23,12 +23,14 @@ export default defineComponent({
 <template>
   <div class="view-controls">
     <div
+      id="view-list"
       @click="$emit('update:modelValue', ViewLayout.List)"
       :class="['view-control', { selected: modelValue === ViewLayout.List }]"
     >
       <font-awesome-icon icon="list" />
     </div>
     <div
+      id="view-grid"
       @click="$emit('update:modelValue', ViewLayout.Grid)"
       :class="['view-control', { selected: modelValue === ViewLayout.Grid }]"
     >
