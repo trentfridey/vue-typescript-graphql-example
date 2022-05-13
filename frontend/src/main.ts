@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createApolloProvider } from "@vue/apollo-option";
-import apolloClient from "@/client.js";
+import apolloClient from "@/client";
 const apolloProvider = createApolloProvider({
   defaultClient: apolloClient,
 });

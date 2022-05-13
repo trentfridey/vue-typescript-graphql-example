@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 import type { PropType } from "vue";
 import { RouterLink } from "vue-router";
 import { ViewLayout } from "@/components/ViewLayoutControl.vue";
-import { unFavoritePokemon, favoritePokemon } from "@/client.js";
+import { unFavoritePokemon, favoritePokemon } from "@/client";
 
 type Pokemon = {
   name: string;

@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-import { getAllPokemonTypes } from "@/client.js";
+import { getAllPokemonTypes } from "@/client";
 
 export default defineComponent({
   props: {

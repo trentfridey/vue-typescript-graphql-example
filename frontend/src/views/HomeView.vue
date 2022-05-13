@@ -6,7 +6,7 @@ import ViewLayoutControl, {
 } from "@/components/ViewLayoutControl.vue";
 import TabViewControl from "@/components/TabViewControl.vue";
 import TypeFilter from "@/components/TypeFilter.vue";
-import { getAllPokemon } from "@/client.js";
+import { getAllPokemon } from "@/client";
 
 export default defineComponent({
   components: {
