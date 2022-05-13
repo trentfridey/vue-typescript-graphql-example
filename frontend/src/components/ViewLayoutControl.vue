@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import type { PropType } from "vue";
 
 export enum ViewLayout {
   List = "List",
@@ -8,7 +9,7 @@ export enum ViewLayout {
 
 export default defineComponent({
   props: {
-    modelValue: ViewLayout,
+    modelValue: Object as PropType<ViewLayout>,
   },
   emits: ["update:modelValue"],
   computed: {

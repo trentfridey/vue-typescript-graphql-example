@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createApolloProvider } from "@vue/apollo-option";
-import apolloClient from "@/client.ts";
+import apolloClient from "@/client.js";
 const apolloProvider = createApolloProvider({
   defaultClient: apolloClient,
 });
@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add([faList, faBorderAll, fasHeart, farHeart, faVolumeHigh]);
+library.add(faList, faBorderAll, fasHeart, farHeart, faVolumeHigh);
 
 import App from "./App.vue";
 import router from "./router";

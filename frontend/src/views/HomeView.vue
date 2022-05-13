@@ -6,7 +6,7 @@ import ViewLayoutControl, {
 } from "@/components/ViewLayoutControl.vue";
 import TabViewControl from "@/components/TabViewControl.vue";
 import TypeFilter from "@/components/TypeFilter.vue";
-import { getAllPokemon } from "@/client.ts";
+import { getAllPokemon } from "@/client.js";
 
 export default defineComponent({
   components: {
@@ -28,7 +28,7 @@ export default defineComponent({
       update: (data) => data.pokemons.edges,
     },
   },
-  data() {
+  data: () => {
     return {
       search: "",
       viewLayoutSelected: ViewLayout.List,

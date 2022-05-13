@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from "vue";
-import { getPokemonDetails } from "@/client.ts";
+import { getPokemonDetails } from "@/client.js";
 
 export default defineComponent({
   apollo: {

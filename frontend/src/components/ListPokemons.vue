@@ -1,24 +1,33 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import type { PropType } from "vue";
 import { RouterLink } from "vue-router";
 import { ViewLayout } from "@/components/ViewLayoutControl.vue";
-import { unFavoritePokemon, favoritePokemon } from "@/client.ts";
+import { unFavoritePokemon, favoritePokemon } from "@/client.js";
+
+type Pokemon = {
+  name: string;
+  id: string;
+  types: Array<string>;
+  isFavorite: boolean;
+  image: string;
+};
 
 export default defineComponent({
   components: { RouterLink },
   props: {
-    viewLayout: ViewLayout,
+    viewLayout: Object as PropType<ViewLayout>,
     pokemons: {
-      type: Array,
+      type: Object as PropType<Array<Pokemon>>,
     },
   },
   computed: {
-    view() {
+    view(): string {
       return this.viewLayout === ViewLayout.List ? "list" : "grid";
     },
   },
   methods: {
-    toggleFavorite(pokemon) {
+    toggleFavorite(pokemon: Pokemon) {
       const mutations = { unFavoritePokemon, favoritePokemon };
       const mutationType = pokemon.isFavorite
         ? "unFavoritePokemon"

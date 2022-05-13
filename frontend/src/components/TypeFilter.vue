@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
-import { getAllPokemonTypes } from "@/client.ts";
+import { getAllPokemonTypes } from "@/client.js";
 
 export default defineComponent({
   props: {
@@ -16,6 +16,11 @@ export default defineComponent({
       pokemonTypes: [],
     };
   },
+  methods: {
+    updateModelValue(e: Event) {
+      this.$emit("update:modelValue", (e.target as HTMLInputElement).value);
+    },
+  },
 });
 </script>
 
@@ -24,7 +29,7 @@ export default defineComponent({
     <select
       name="filter"
       :value="modelValue"
-      @change="$emit('update:modelValue', $event.target.value)"
+      @change="updateModelValue"
       width="100"
     >
       <option value="" disabled>Type</option>
