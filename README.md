@@ -1,5 +1,6 @@
 # Front-End Coding Challenge
 
+![](./Peek%202022-09-02%2022-05.gif)
 
 ## Project Setup
 
