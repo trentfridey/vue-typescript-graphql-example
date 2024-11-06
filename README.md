@@ -1,4 +1,4 @@
-# Front-End Coding Challenge
+# Vue + Typescript + GraphQL Pokedex
 
 ![](./Peek%202022-09-02%2022-05.gif)
 
